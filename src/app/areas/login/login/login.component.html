@@ -1,0 +1,18 @@
+
+<main class="d-flex align-items-center justify-content-center ">
+    <div class=" border p-5 px-4 py-3  mx-auto card" style="width:30%;">
+        <div class="form-group px-4 py-3 pb-0 mb-0">
+          <label for="exampleInputEmail1">First Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="firstName"
+          placeholder="First Name">
+          <span *ngIf="errors.firstName" class="text-danger">{{errors.firstName}}</span>
+        </div>
+        <div class="form-group px-4 py-3 pt-0">
+          <label for="exampleInputPassword1">Last Name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="lastName"
+            placeholder="Last Name">
+          <span *ngIf="errors.lastName" class="text-danger">{{errors.lastName}}</span>
+        </div>
+        <button type="submit" class="btn btn-primary mx-4 my-3 mx-auto w-50" (click)="registrationHandler()" >Submit</button>
+      </div>
+</main>

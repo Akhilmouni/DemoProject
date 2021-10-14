@@ -1,0 +1,9 @@
+@import './../../app/theme/variable.scss';
+.center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: $green-color;
+    font-size: $font-26;
+    font-family: sans-serif;
+}
